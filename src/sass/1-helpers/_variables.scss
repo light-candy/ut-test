@@ -6,3 +6,12 @@ $footer-dark: #19263F;
 $card-grey: #FAFAFA;
 $button-green:#85B657;
 $card-link-blue:#1657AB;
+
+/*Bootstrap*/
+$enable-grid-classes: false;
+$container-max-widths: (
+  sm: 420px,
+  md: 720px,
+  lg: 1090px
+);
+$grid-gutter-width: 30px;

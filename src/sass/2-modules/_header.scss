@@ -2,12 +2,15 @@
     height:500px;
     margin-bottom:80px;
     color:$header-white;
+    font-family:'PT Sans', sans-serif;
+    font-weight:400;
     transform:translateX(0);
     background: url('../images/main-bg.png') no-repeat center center/cover;
 }
 .header__container{
     @include make-container();
     @include make-container-max-widths;
+    box-sizing:border-box;
 }
 .header__title{
     text-transform:uppercase;
@@ -18,7 +21,7 @@
     width:420px;
     margin-bottom:24px;
     @include media-breakpoint-up(lg) {
-         margin-bottom:84px;
+       margin-bottom:84px;
     }
 }
 .header__title-row{
@@ -27,15 +30,12 @@
     justify-content:center;
 }
 .header__text{
-    font-family:'PT Sans', sans-serif;
-    font-weight:400;
     font-size:18px;
     line-height:23px;
     text-align:center;
     margin-bottom:100px;
     padding:0 15px;
     @include media-breakpoint-up(lg) {
-         padding:0 90px;
+       padding:0 90px;
     }
-
 }

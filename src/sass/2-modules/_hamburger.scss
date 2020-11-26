@@ -8,28 +8,28 @@
     cursor:pointer;
     transition:all 0.3s ease;
     &:hover{
-        span{
-            background:$link-hover-yellow;
-            transition:all 0.3s ease;
-        }
+       span{
+          background:$link-hover-yellow;
+          transition:all 0.3s ease;
+       }
     }
     &:active{
-        span{
-            background:$link-active-red;
-            transition:all 0.3s ease;
-        }
+       span{
+          background:$link-active-red;
+          transition:all 0.3s ease;
+       }
     }
-   
     span{
-        background:$header-white;
-        border-radius:4px;
-        height:4px;
-        width:44px;
-        display:block;
-        &:not(:last-child){
-            margin-bottom:6px;
-        }
-
+       background:$header-white;
+       border-radius:4px;
+       height:4px;
+       width:44px;
+       display:block;
+       &:not(:last-child){
+           margin-bottom:6px;
+       }
     }
-    @include media-breakpoint-up(md) { display:none; }
+    @include media-breakpoint-up(md){
+        display:none;
+    }
 }

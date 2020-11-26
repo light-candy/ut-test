@@ -1,12 +1,9 @@
-
-
 .companies-row{
     @include make-row();
     padding-bottom:40px;
     justify-content:center;
     align-items:center;
 }
-
 .companies{
     @include make-col(9);
     display:flex;
@@ -18,6 +15,5 @@
 .company{
     &:not(:last-child){
         margin-right:35px;
-
     }
 }

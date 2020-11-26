@@ -9,12 +9,10 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
   @extend .fab;
   @extend .fa-stack-1x;
   color:#fff;
-
   &:before {
     content: fa-content($icon);
   }
 }
-
 .twitter{
     @include social($fa-var-twitter);
 }
@@ -29,7 +27,6 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
   @extend .fas;
   @extend .fa-stack-2x;
   color:rgba(255, 255, 255, 0.3);
-
   &:before {
     content: fa-content($fa-var-circle);
   }

@@ -1,4 +1,5 @@
 .main{
     @include make-container();
     @include make-container-max-widths;
+    box-sizing:border-box;
 }

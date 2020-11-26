@@ -1,0 +1,2 @@
+!function(){"use strict";document.getElementById("hamburger").addEventListener("click",(function(){document.getElementById("mobile-menu").classList.toggle("open")}))}();
+//# sourceMappingURL=bundle.js.map

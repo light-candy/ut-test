@@ -1,0 +1,28 @@
+@mixin link($color){
+    color:$color;
+    transition:all 0.3s ease;
+    cursor:pointer;
+    &:hover{
+        color:$link-hover-yellow;
+        transition:all 0.3s ease;
+    }
+    &:active{
+        color:$link-active-red;
+        transition:all 0.3s ease;
+    }
+}
+@mixin title(){
+    font-family:'PT Sans', sans-serif;
+    font-weight:700;
+    font-size:18px;
+    line-height:23px;
+    color:$text-black;
+    text-align:center;
+}
+@mixin description(){
+    font-family:'PT Sans', sans-serif;
+    font-weight:400;
+    font-size:14px;
+    line-height:18px;
+    color:$text-black;
+}

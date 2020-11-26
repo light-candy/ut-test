@@ -1,0 +1,14 @@
+@import 'resets';
+@import 'variables';
+@import 'mixins';
+$enable-grid-classes: false;
+$container-max-widths: (
+  sm: 420px,
+  md: 720px,
+  lg: 1060px
+);
+$grid-gutter-width: 30px;
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/grid";

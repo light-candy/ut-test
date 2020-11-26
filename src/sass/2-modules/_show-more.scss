@@ -1,0 +1,17 @@
+.show-more{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:80px;
+}
+
+.show-more__button{
+    @include description();
+    @include link($text-black);
+    text-align:center;
+    border:1px solid $button-green;
+    border-radius:4px;
+    padding:18px 50px;
+    background:$header-white;
+
+}

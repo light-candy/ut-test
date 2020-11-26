@@ -1,0 +1,46 @@
+.cards{
+    @include make-row();
+    margin-bottom:80px;
+    justify-content:center;
+}
+.cards__column{
+    @include make-col-ready();
+    @include make-col(10);
+ @include media-breakpoint-up(sm) {
+    @include make-col(10);
+ }
+  @include media-breakpoint-up(md) {
+    @include make-col(6);
+  }
+  @include media-breakpoint-up(lg) {
+    @include make-col(4);
+  }
+}
+.card{
+    background:$card-grey;
+    padding:40px 35px 30px 35px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    &:hover{
+        box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+        transition:all 0.5s ease;
+    }
+}
+.card__icon{
+    margin-bottom:25px;
+}
+.card__title{
+    @include title();
+    margin-bottom:11px;
+}
+.card__description{
+    @include description();
+    text-align:left;
+}
+.card__link{
+    @include description();
+    @include link($card-link-blue);
+    text-align:center;
+}

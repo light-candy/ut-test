@@ -1,0 +1,36 @@
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~@fortawesome/fontawesome-free/scss/stacked.scss";
+
+@mixin social($icon){
+  @extend %fa-icon;
+  @extend .fab;
+  @extend .fa-stack-1x;
+  color:#fff;
+
+  &:before {
+    content: fa-content($icon);
+  }
+}
+
+.twitter{
+    @include social($fa-var-twitter);
+}
+.facebook{
+    @include social($fa-var-facebook-f);
+}
+.instagram {
+    @include social($fa-var-instagram);
+}
+.circle{
+  @extend %fa-icon;
+  @extend .fas;
+  @extend .fa-stack-2x;
+  color:rgba(255, 255, 255, 0.3);
+
+  &:before {
+    content: fa-content($fa-var-circle);
+  }
+}
